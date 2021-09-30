@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/easypay-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-merchant-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-merchant-application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-merchant/easypay-merchant-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-merchant/easypay-merchant-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-merchant/easypay-merchant-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-merchant/easypay-merchant-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-verification/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-verification/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-verify/easypay-verify-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-verify/easypay-verify-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-verify/easypay-verify-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easypay-verify/easypay-verify-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

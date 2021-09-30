@@ -1,0 +1,876 @@
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:24,915 INFO
+            [main][:] - using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:24,930 INFO
+            [main][WelcomeLogoApplicationListener.java:63] - 
+
+ :: Dubbo Spring Boot (v2.7.1) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.7.3) : https://github.com/apache/incubator-dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:24,938 INFO
+            [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-service, dubbo.application.qos-enable=false, dubbo.application.qos.port=22240, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=90000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20890, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base-packages=ink.breakpoint.easypay.}
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:25,290 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c48d64cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:25,365 INFO
+            [pool-3-thread-1][AwaitingNonWebApplicationListener.java:140] -  [Dubbo] Current Spring Boot Application is await...
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:25,631 INFO
+            [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-service, dubbo.application.qos-enable=false, dubbo.application.qos.port=22240, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=90000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20890, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base-packages=ink.breakpoint.easypay.}
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:25,800 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-http.yaml', group: 'COMMON_GROUP'
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:25,808 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'merchant-service.yaml', group: 'MERCHANT_GROUP'
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:25,810 INFO
+            [main][PropertySourceBootstrapConfiguration.java:98] - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource@645875534 {name='merchant-service.yaml', properties={spring.datasource.druid.url=jdbc:mysql://127.0.0.1:3306/easypay_merchant_service?useUnicode=true&characterEncoding=UTF8&serverTimezone=Asia/Shanghai&useSSL=false, mybatis-plus.mapper-locations=classpath:ink/breakpoint/easypay/*/mapper/*.xml, spring.datasource.druid.password=root, mybatis-plus.typeAliasesPackage=ink.breakpoint.easypay.merchant.entity, spring.datasource.druid.username=root}}, NacosPropertySource@2054451662 {name='spring-boot-http.yaml', properties={management.endpoints.web.exposure.include=refresh,health,info,env, http.encoding.enabled=true, server.use?forward-headers=true, http.messages.encoding=UTF?8, server.servlet.context-path=/, http.encoding.charset=UTF?8, server.tomcat.protocol_header=x?forwarded?proto, server.tomcat.remote_ip_header=x?forwarded?for, http.encoding.force=true}}]}
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:25,837 INFO
+            [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,391 DEBUG
+            [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,558 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,561 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,590 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ApplicationConfig] within prefix [dubbo.applications]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,590 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ModuleConfig] within prefix [dubbo.modules]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,590 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.RegistryConfig] within prefix [dubbo.registries]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,591 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProtocolConfig] within prefix [dubbo.protocols]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,591 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MonitorConfig] within prefix [dubbo.monitors]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,591 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProviderConfig] within prefix [dubbo.providers]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,591 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ConsumerConfig] within prefix [dubbo.consumers]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,592 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.spring.ConfigCenterBean] within prefix [dubbo.config-centers]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,592 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MetadataReportConfig] within prefix [dubbo.metadata-reports]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,593 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,594 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,594 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ModuleConfig] within prefix [dubbo.module]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,594 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.RegistryConfig#0, class : org.apache.dubbo.config.RegistryConfig] has been registered.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,595 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.RegistryConfig#0] has been registered.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,595 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, class : org.apache.dubbo.config.ProtocolConfig] has been registered.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,595 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ProtocolConfig#0] has been registered.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,595 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MonitorConfig] within prefix [dubbo.monitor]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,596 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProviderConfig] within prefix [dubbo.provider]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,596 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, class : org.apache.dubbo.config.ConsumerConfig] has been registered.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,596 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ConsumerConfig#0] has been registered.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,597 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.spring.ConfigCenterBean] within prefix [dubbo.config-center]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,597 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MetadataReportConfig] within prefix [dubbo.metadata-report]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,862 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,924 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:204] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,925 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:206] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,941 DEBUG
+            [main][ClassPathScanningCandidateComponentProvider.java:437] - Identified candidate component class: file [C:\Users\shaoshuai\IdeaProjects\easypay\easypay-merchant\easypay-merchant-service\target\classes\ink\breakpoint\easypay\merchant\service\MerchantService.class]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,971 DEBUG
+            [main][ClassPathScanningCandidateComponentProvider.java:437] - Identified candidate component class: file [C:\Users\shaoshuai\IdeaProjects\easypay\easypay-merchant\easypay-merchant-service\target\classes\ink\breakpoint\easypay\merchant\service\MerchantService.class]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,983 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:284] -  [DUBBO] The BeanDefinition[Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,983 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:161] -  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'merchantService': Generic bean: class [ink.breakpoint.easypay.merchant.service.MerchantService]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\shaoshuai\IdeaProjects\easypay\easypay-merchant\easypay-merchant-service\target\classes\ink\breakpoint\easypay\merchant\service\MerchantService.class]] } were scanned under package[ink.breakpoint.easypay.], dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,985 INFO
+            [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:26,985 INFO
+            [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,103 INFO
+            [main][GenericScope.java:294] - BeanFactory id=59a38109-aedb-3f9d-8710-f355453e1c0b
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,271 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a87361ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,426 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration$$EnhancerBySpringCGLIB$$2c34b0d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,451 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubbo.cloud-com.alibaba.cloud.dubbo.env.DubboCloudProperties' of type [com.alibaba.cloud.dubbo.env.DubboCloudProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,470 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'metadataJsonResolver' of type [com.alibaba.cloud.dubbo.metadata.resolver.DubboServiceBeanMetadataResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,487 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.dubbo.config.ApplicationConfig#0' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,493 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboProtocolConfigSupplier' of type [com.alibaba.cloud.dubbo.metadata.DubboProtocolConfigSupplier] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,495 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,495 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration$$EnhancerBySpringCGLIB$$9e744d4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,503 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration$$EnhancerBySpringCGLIB$$311e55a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,510 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboGenericServiceFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,516 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboMetadataConfigServiceProxy' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,524 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$f1638f5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,533 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$e52e9823] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,548 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.commons.util.UtilAutoConfiguration' of type [org.springframework.cloud.commons.util.UtilAutoConfiguration$$EnhancerBySpringCGLIB$$70212b52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,556 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtilsProperties' of type [org.springframework.cloud.commons.util.InetUtilsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,558 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtils' of type [org.springframework.cloud.commons.util.InetUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,739 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosProperties' of type [com.alibaba.cloud.nacos.NacosDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,746 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosDiscoveryClient' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,769 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' of type [org.springframework.boot.autoconfigure.web.ServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,772 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$bd92282c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,948 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryProperties' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,952 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryClient' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,958 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'compositeDiscoveryClient' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:27,963 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.util.JSONUtils' of type [com.alibaba.cloud.dubbo.util.JSONUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,079 WARN
+            [main][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,080 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository' of type [com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,121 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,140 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties' of type [org.springframework.boot.autoconfigure.http.HttpProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,146 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$f5b4f402] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,156 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'stringHttpMessageConverter' of type [org.springframework.http.converter.StringHttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,164 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$2f8af002] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,174 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$406e15f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,185 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$b653a378] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,194 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$716a8967] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,202 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,207 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,219 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$98360095] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,252 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,259 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$e6127eee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,272 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,278 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,308 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,321 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'mappingJackson2HttpMessageConverter' of type [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,329 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$c2a72d62] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,339 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'messageConverters' of type [org.springframework.boot.autoconfigure.http.HttpMessageConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,342 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,353 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,362 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,363 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,384 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,393 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,395 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,398 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,412 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c48d64cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,890 INFO
+            [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 56040 (http)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,908 INFO
+            [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-56040"]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,919 INFO
+            [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,920 INFO
+            [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:28,927 INFO
+            [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\Java\jdk1.8.0_301\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\dev\Java\jdk1.8.0_301\bin;D:\DEV\Git\cmd;D:\dev\mysql57\mysql-5.7.34-winx64\bin;C:\Users\shaoshuai\AppData\Local\Microsoft\WindowsApps;;D:\dev\JetBrains\IntelliJ IDEA 2021.2.2\bin;;.]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:29,154 INFO
+            [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:29,154 INFO
+            [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 3305 ms
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:29,720 INFO
+            [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:29,881 INFO
+            [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,108 DEBUG
+            [main][GlobalConfigUtils.java:106] - DeBug: MyBatis Plus Global configuration Initializing !
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,120 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.SelectList
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,121 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.SelectObjs
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,123 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.Insert
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,124 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.Update
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,125 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.Delete
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,126 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.Count
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,144 DEBUG
+            [main][VFS.java:77] - Using VFS adapter com.baomidou.mybatisplus.autoconfigure.SpringBootVFS
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,148 DEBUG
+            [main][ResolverUtil.java:256] - Checking to see if class ink.breakpoint.easypay.merchant.entity.App matches criteria [is assignable to Object]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,149 DEBUG
+            [main][ResolverUtil.java:256] - Checking to see if class ink.breakpoint.easypay.merchant.entity.Merchant matches criteria [is assignable to Object]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,150 DEBUG
+            [main][ResolverUtil.java:256] - Checking to see if class ink.breakpoint.easypay.merchant.entity.Staff matches criteria [is assignable to Object]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,151 DEBUG
+            [main][ResolverUtil.java:256] - Checking to see if class ink.breakpoint.easypay.merchant.entity.Store matches criteria [is assignable to Object]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,153 DEBUG
+            [main][ResolverUtil.java:256] - Checking to see if class ink.breakpoint.easypay.merchant.entity.StoreStaff matches criteria [is assignable to Object]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,393 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.insert
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,398 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.delete
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,402 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.deleteByMap
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,424 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.deleteById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,426 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.deleteBatchIds
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,431 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.update
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,434 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.updateById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,436 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.selectById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,439 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.selectBatchIds
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,442 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.selectByMap
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,445 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.selectOne
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,448 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.selectCount
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,451 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.selectMaps
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,454 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.selectMapsPage
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,458 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.selectObjs
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,461 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.selectList
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,464 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.AppMapper.selectPage
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,472 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.insert
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,475 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.delete
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,478 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.deleteByMap
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,481 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.deleteById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,483 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.deleteBatchIds
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,486 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.update
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,489 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.updateById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,491 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.selectById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,493 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.selectBatchIds
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,497 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.selectByMap
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,501 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.selectOne
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,504 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.selectCount
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,507 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.selectMaps
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,510 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.selectMapsPage
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,514 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.selectObjs
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,518 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.selectList
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,521 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.MerchantMapper.selectPage
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,527 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.insert
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,531 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.delete
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,534 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.deleteByMap
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,538 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.deleteById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,541 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.deleteBatchIds
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,544 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.update
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,548 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.updateById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,549 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.selectById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,552 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.selectBatchIds
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,554 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.selectByMap
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,557 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.selectOne
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,560 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.selectCount
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,563 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.selectMaps
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,566 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.selectMapsPage
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,569 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.selectObjs
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,572 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.selectList
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,575 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StaffMapper.selectPage
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,582 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.insert
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,585 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.delete
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,587 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.deleteByMap
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,590 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.deleteById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,592 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.deleteBatchIds
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,596 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.update
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,599 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.updateById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,600 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.selectById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,602 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.selectBatchIds
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,604 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.selectByMap
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,607 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.selectOne
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,611 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.selectCount
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,614 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.selectMaps
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,617 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.selectMapsPage
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,620 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.selectObjs
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,623 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.selectList
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,628 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreMapper.selectPage
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,635 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.insert
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,638 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.delete
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,642 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.deleteByMap
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,645 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.deleteById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,648 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.deleteBatchIds
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,666 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.update
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,669 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.updateById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,670 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.selectById
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,672 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.selectBatchIds
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,675 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.selectByMap
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,678 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.selectOne
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,680 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.selectCount
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,681 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.selectMaps
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,684 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.selectMapsPage
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,686 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.selectObjs
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,690 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.selectList
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,692 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: ink.breakpoint.easypay.merchant.mapper.StoreStaffMapper.selectPage
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,742 WARN
+            [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,742 INFO
+            [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,751 WARN
+            [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,751 INFO
+            [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,810 DEBUG
+            [main][TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,812 DEBUG
+            [main][ResourceBundleMessageInterpolator.java:89] - Loaded expression factory via original TCCL
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,828 DEBUG
+            [main][TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,829 DEBUG
+            [main][ConfigurationImpl.java:148] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,830 DEBUG
+            [main][ConfigurationImpl.java:180] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,831 DEBUG
+            [main][ConfigurationImpl.java:194] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,832 DEBUG
+            [main][ValidationXmlParser.java:120] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,832 DEBUG
+            [main][ResourceLoaderHelper.java:53] - Trying to load META-INF/validation.xml via user class loader
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,833 DEBUG
+            [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via TCCL
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,833 DEBUG
+            [main][ResourceLoaderHelper.java:66] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,833 DEBUG
+            [main][ValidationXmlParser.java:127] - No META-INF/validation.xml found. Using annotation based configuration only.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,839 DEBUG
+            [main][ValidatorFactoryImpl.java:578] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,839 DEBUG
+            [main][ValidatorFactoryImpl.java:579] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,839 DEBUG
+            [main][ValidatorFactoryImpl.java:580] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,839 DEBUG
+            [main][ValidatorFactoryImpl.java:581] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:31,840 DEBUG
+            [main][ValidatorFactoryImpl.java:582] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:32,033 INFO
+            [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:32,475 INFO
+            [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:32,531 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:32,537 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:32,552 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ConsumerConfig#0] have been binding by prefix of configuration properties : dubbo.consumer
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,284 INFO
+            [main][EndpointLinksResolver.java:59] - Exposing 4 endpoint(s) beneath base path '/actuator'
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,413 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adaptive implements org.apache.dubbo.rpc.Protocol {
+public void destroy()  {
+throw new UnsupportedOperationException("The method public abstract void org.apache.dubbo.rpc.Protocol.destroy() of interface org.apache.dubbo.rpc.Protocol is not adaptive method!");
+}
+public int getDefaultPort()  {
+throw new UnsupportedOperationException("The method public abstract int org.apache.dubbo.rpc.Protocol.getDefaultPort() of interface org.apache.dubbo.rpc.Protocol is not adaptive method!");
+}
+public org.apache.dubbo.rpc.Exporter export(org.apache.dubbo.rpc.Invoker arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.Protocol) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.Protocol extension = (org.apache.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+public org.apache.dubbo.rpc.Invoker refer(java.lang.Class arg0, org.apache.dubbo.common.URL arg1) throws org.apache.dubbo.rpc.RpcException {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.Protocol) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.Protocol extension = (org.apache.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,506 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adaptive implements org.apache.dubbo.rpc.ProxyFactory {
+public java.lang.Object getProxy(org.apache.dubbo.rpc.Invoker arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+public java.lang.Object getProxy(org.apache.dubbo.rpc.Invoker arg0, boolean arg1) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0, arg1);
+}
+public org.apache.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, org.apache.dubbo.common.URL arg2) throws org.apache.dubbo.rpc.RpcException {
+if (arg2 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg2;
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,580 INFO
+            [main][DubboServiceMetadataRepository.java:280] - The metadata of Dubbo service[name : merchant-application] is about to be initialized
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,605 WARN
+            [main][DubboServiceMetadataRepository.java:484] - The Spring application[name : merchant-application] does not expose The REST metadata in the Dubbo services.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,605 INFO
+            [main][DubboServiceMetadataRepository.java:262] - The metadata of Dubbo services has been initialized
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,686 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,689 INFO
+            [com.alibaba.nacos.naming.client.listener][DubboServiceDiscoveryAutoConfiguration.java:157] - The event of the service instances[name : merchant-application , size : 0] change is about to be dispatched
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,697 INFO
+            [main][ServiceBean.java:112] -  [DUBBO] The service ready on spring started. service: ink.breakpoint.easypay.merchant.service.api.IMerchantService, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,718 WARN
+            [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,798 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.cache;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class CacheFactory$Adaptive implements org.apache.dubbo.cache.CacheFactory {
+public org.apache.dubbo.cache.Cache getCache(org.apache.dubbo.common.URL arg0, org.apache.dubbo.rpc.Invocation arg1)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+if (arg1 == null) throw new IllegalArgumentException("invocation == null"); String methodName = arg1.getMethodName();
+String extName = url.getMethodParameter(methodName, "cache", "lru");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.cache.CacheFactory) name from url (" + url.toString() + ") use keys([cache])");
+org.apache.dubbo.cache.CacheFactory extension = (org.apache.dubbo.cache.CacheFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.cache.CacheFactory.class).getExtension(extName);
+return extension.getCache(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,815 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.monitor;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class MonitorFactory$Adaptive implements org.apache.dubbo.monitor.MonitorFactory {
+public org.apache.dubbo.monitor.Monitor getMonitor(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.monitor.MonitorFactory) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.monitor.MonitorFactory extension = (org.apache.dubbo.monitor.MonitorFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.monitor.MonitorFactory.class).getExtension(extName);
+return extension.getMonitor(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,831 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.validation;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Validation$Adaptive implements org.apache.dubbo.validation.Validation {
+public org.apache.dubbo.validation.Validator getValidator(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("validation", "jvalidation");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.validation.Validation) name from url (" + url.toString() + ") use keys([validation])");
+org.apache.dubbo.validation.Validation extension = (org.apache.dubbo.validation.Validation)ExtensionLoader.getExtensionLoader(org.apache.dubbo.validation.Validation.class).getExtension(extName);
+return extension.getValidator(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,846 INFO
+            [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service ink.breakpoint.easypay.merchant.service.api.IMerchantService to local registry url : injvm://127.0.0.1/ink.breakpoint.easypay.merchant.service.api.IMerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService&bind.ip=172.16.42.117&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=ink.breakpoint.easypay.merchant.service.api.IMerchantService&methods=queryMerchantById&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1632970413723, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,846 INFO
+            [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service ink.breakpoint.easypay.merchant.service.api.IMerchantService to url dubbo://172.16.42.117:20890/ink.breakpoint.easypay.merchant.service.api.IMerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService&bind.ip=172.16.42.117&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=ink.breakpoint.easypay.merchant.service.api.IMerchantService&methods=queryMerchantById&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1632970413723, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,847 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,847 INFO
+            [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service ink.breakpoint.easypay.merchant.service.api.IMerchantService url dubbo://172.16.42.117:20890/ink.breakpoint.easypay.merchant.service.api.IMerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService&bind.ip=172.16.42.117&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=ink.breakpoint.easypay.merchant.service.api.IMerchantService&methods=queryMerchantById&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1632970413723 to registry registry://localhost:9090/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=13512&qos.enable=false&qos.port=22240&registry=spring-cloud&release=2.7.3&timestamp=1632970413719, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,869 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.registry;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adaptive implements org.apache.dubbo.registry.RegistryFactory {
+public org.apache.dubbo.registry.Registry getRegistry(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.registry.RegistryFactory) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.registry.RegistryFactory extension = (org.apache.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,884 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc.cluster;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adaptive implements org.apache.dubbo.rpc.cluster.Cluster {
+public org.apache.dubbo.rpc.Invoker join(org.apache.dubbo.rpc.cluster.Directory arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.cluster.Directory argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.cluster.Directory argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("cluster", "failover");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.cluster.Cluster) name from url (" + url.toString() + ") use keys([cluster])");
+org.apache.dubbo.rpc.cluster.Cluster extension = (org.apache.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,892 INFO
+            [main][QosProtocolWrapper.java:89] -  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,923 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.remoting;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Transporter$Adaptive implements org.apache.dubbo.remoting.Transporter {
+public org.apache.dubbo.remoting.Client connect(org.apache.dubbo.common.URL arg0, org.apache.dubbo.remoting.ChannelHandler arg1) throws org.apache.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.remoting.Transporter) name from url (" + url.toString() + ") use keys([client, transporter])");
+org.apache.dubbo.remoting.Transporter extension = (org.apache.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(org.apache.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.connect(arg0, arg1);
+}
+public org.apache.dubbo.remoting.Server bind(org.apache.dubbo.common.URL arg0, org.apache.dubbo.remoting.ChannelHandler arg1) throws org.apache.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("server", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.remoting.Transporter) name from url (" + url.toString() + ") use keys([server, transporter])");
+org.apache.dubbo.remoting.Transporter extension = (org.apache.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(org.apache.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.bind(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,948 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.remoting;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Dispatcher$Adaptive implements org.apache.dubbo.remoting.Dispatcher {
+public org.apache.dubbo.remoting.ChannelHandler dispatch(org.apache.dubbo.remoting.ChannelHandler arg0, org.apache.dubbo.common.URL arg1)  {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg1;
+String extName = url.getParameter("dispatcher", url.getParameter("dispather", url.getParameter("channel.handler", "all")));
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.remoting.Dispatcher) name from url (" + url.toString() + ") use keys([dispatcher, dispather, channel.handler])");
+org.apache.dubbo.remoting.Dispatcher extension = (org.apache.dubbo.remoting.Dispatcher)ExtensionLoader.getExtensionLoader(org.apache.dubbo.remoting.Dispatcher.class).getExtension(extName);
+return extension.dispatch(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,963 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.common.threadpool;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class ThreadPool$Adaptive implements org.apache.dubbo.common.threadpool.ThreadPool {
+public java.util.concurrent.Executor getExecutor(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("threadpool", "fixed");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.common.threadpool.ThreadPool) name from url (" + url.toString() + ") use keys([threadpool])");
+org.apache.dubbo.common.threadpool.ThreadPool extension = (org.apache.dubbo.common.threadpool.ThreadPool)ExtensionLoader.getExtensionLoader(org.apache.dubbo.common.threadpool.ThreadPool.class).getExtension(extName);
+return extension.getExecutor(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:33,998 DEBUG
+            [main][InternalLoggerFactory.java:43] - Using SLF4J as the default logging framework
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,008 DEBUG
+            [main][MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 16
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,038 DEBUG
+            [main][NioEventLoop.java:105] - -Dio.netty.noKeySetOptimization: false
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,039 DEBUG
+            [main][NioEventLoop.java:106] - -Dio.netty.selectorAutoRebuildThreshold: 512
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,043 DEBUG
+            [main][PlatformDependent.java:955] - Platform: Windows
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,046 DEBUG
+            [main][PlatformDependent0.java:395] - -Dio.netty.noUnsafe: false
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,046 DEBUG
+            [main][PlatformDependent0.java:871] - Java version: 8
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,047 DEBUG
+            [main][PlatformDependent0.java:120] - sun.misc.Unsafe.theUnsafe: available
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,048 DEBUG
+            [main][PlatformDependent0.java:144] - sun.misc.Unsafe.copyMemory: available
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,048 DEBUG
+            [main][PlatformDependent0.java:182] - java.nio.Buffer.address: available
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,049 DEBUG
+            [main][PlatformDependent0.java:243] - direct buffer constructor: available
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,050 DEBUG
+            [main][PlatformDependent0.java:313] - java.nio.Bits.unaligned: available, true
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,050 DEBUG
+            [main][PlatformDependent0.java:378] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,050 DEBUG
+            [main][PlatformDependent0.java:385] - java.nio.DirectByteBuffer.<init>(long, int): available
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,050 DEBUG
+            [main][PlatformDependent.java:992] - sun.misc.Unsafe: available
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,051 DEBUG
+            [main][PlatformDependent.java:1086] - -Dio.netty.tmpdir: C:\Users\SHAOSH~1\AppData\Local\Temp (java.io.tmpdir)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,051 DEBUG
+            [main][PlatformDependent.java:1165] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,052 DEBUG
+            [main][PlatformDependent.java:157] - -Dio.netty.maxDirectMemory: 3791650816 bytes
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,053 DEBUG
+            [main][PlatformDependent.java:164] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,055 DEBUG
+            [main][CleanerJava6.java:92] - java.nio.ByteBuffer.cleaner(): available
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,055 DEBUG
+            [main][PlatformDependent.java:184] - -Dio.netty.noPreferDirect: false
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,057 DEBUG
+            [main][PlatformDependent.java:860] - org.jctools-core.MpscChunkedArrayQueue: available
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,097 DEBUG
+            [main][ResourceLeakDetector.java:129] - -Dio.netty.leakDetection.level: simple
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,097 DEBUG
+            [main][ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.targetRecords: 4
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,107 DEBUG
+            [main][PooledByteBufAllocator.java:126] - -Dio.netty.allocator.numHeapArenas: 16
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,107 DEBUG
+            [main][PooledByteBufAllocator.java:127] - -Dio.netty.allocator.numDirectArenas: 16
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,107 DEBUG
+            [main][PooledByteBufAllocator.java:129] - -Dio.netty.allocator.pageSize: 8192
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,107 DEBUG
+            [main][PooledByteBufAllocator.java:134] - -Dio.netty.allocator.maxOrder: 11
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,107 DEBUG
+            [main][PooledByteBufAllocator.java:138] - -Dio.netty.allocator.chunkSize: 16777216
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,107 DEBUG
+            [main][PooledByteBufAllocator.java:139] - -Dio.netty.allocator.tinyCacheSize: 512
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,107 DEBUG
+            [main][PooledByteBufAllocator.java:140] - -Dio.netty.allocator.smallCacheSize: 256
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,108 DEBUG
+            [main][PooledByteBufAllocator.java:141] - -Dio.netty.allocator.normalCacheSize: 64
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,108 DEBUG
+            [main][PooledByteBufAllocator.java:142] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,108 DEBUG
+            [main][PooledByteBufAllocator.java:143] - -Dio.netty.allocator.cacheTrimInterval: 8192
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,108 DEBUG
+            [main][PooledByteBufAllocator.java:144] - -Dio.netty.allocator.useCacheForAllThreads: true
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,108 DEBUG
+            [main][PooledByteBufAllocator.java:145] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,113 DEBUG
+            [main][InternalThreadLocalMap.java:54] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,113 DEBUG
+            [main][InternalThreadLocalMap.java:57] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,131 DEBUG
+            [main][DefaultChannelId.java:79] - -Dio.netty.processId: 13512 (auto-detected)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,135 DEBUG
+            [main][NetUtil.java:139] - -Djava.net.preferIPv4Stack: false
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,136 DEBUG
+            [main][NetUtil.java:140] - -Djava.net.preferIPv6Addresses: false
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,256 DEBUG
+            [main][NetUtil.java:224] - Loopback interface: [lo, Software Loopback Interface 1, 127.0.0.1] ([lo, Software Loopback Interface 1, 127.0.0.1], {})
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,257 DEBUG
+            [main][NetUtil.java:289] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,381 DEBUG
+            [main][DefaultChannelId.java:101] - -Dio.netty.machineId: f8:e4:3b:ff:fe:01:64:c9 (auto-detected)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,405 DEBUG
+            [main][ByteBufUtil.java:83] - -Dio.netty.allocator.type: pooled
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,405 DEBUG
+            [main][ByteBufUtil.java:92] - -Dio.netty.threadLocalDirectBufferSize: 0
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,406 DEBUG
+            [main][ByteBufUtil.java:95] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,416 INFO
+            [main][AbstractServer.java:73] -  [DUBBO] Start NettyServer bind /0.0.0.0:20890, export /172.16.42.117:20890, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,418 WARN
+            [main][SpringExtensionFactory.java:86] -  [DUBBO] No spring extension (bean) named:applicationContext, try to find an extension (bean) of type org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,419 DEBUG
+            [main][SpringExtensionFactory.java:99] -  [DUBBO] Error when get spring extension(bean) for type:org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 172.16.42.117
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.context.ConfigurableApplicationContext' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:343)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at org.apache.dubbo.config.spring.extension.SpringExtensionFactory.getExtension(SpringExtensionFactory.java:94)
+	at org.apache.dubbo.common.extension.factory.AdaptiveExtensionFactory.getExtension(AdaptiveExtensionFactory.java:47)
+	at org.apache.dubbo.common.extension.ExtensionLoader.injectExtension(ExtensionLoader.java:566)
+	at org.apache.dubbo.common.extension.ExtensionLoader.createExtension(ExtensionLoader.java:535)
+	at org.apache.dubbo.common.extension.ExtensionLoader.getExtension(ExtensionLoader.java:351)
+	at org.apache.dubbo.registry.RegistryFactory$Adaptive.getRegistry(RegistryFactory$Adaptive.java)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.getRegistry(RegistryProtocol.java:298)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:212)
+	at org.apache.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:61)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:120)
+	at org.apache.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:59)
+	at org.apache.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at org.apache.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:607)
+	at org.apache.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:457)
+	at org.apache.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:415)
+	at org.apache.dubbo.config.ServiceConfig.export(ServiceConfig.java:378)
+	at org.apache.dubbo.config.spring.ServiceBean.export(ServiceBean.java:336)
+	at org.apache.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:114)
+	at org.apache.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:60)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:896)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at ink.breakpoint.easypay.merchant.MerchantServiceBootstrap.main(MerchantServiceBootstrap.java:9)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,425 WARN
+            [main][SpringExtensionFactory.java:104] -  [DUBBO] No spring extension (bean) named:applicationContext, type:org.springframework.context.ConfigurableApplicationContext found, stop get bean., dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,436 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://172.16.42.117:20890/ink.breakpoint.easypay.merchant.service.api.IMerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=ink.breakpoint.easypay.merchant.service.api.IMerchantService&methods=queryMerchantById&pid=13512&register=true&release=2.7.3&side=provider&timestamp=1632970413723, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,613 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://172.16.42.117:20890/ink.breakpoint.easypay.merchant.service.api.IMerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService&bind.ip=172.16.42.117&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=ink.breakpoint.easypay.merchant.service.api.IMerchantService&methods=queryMerchantById&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1632970413723, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,615 INFO
+            [main][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : provider://172.16.42.117:20890/ink.breakpoint.easypay.merchant.service.api.IMerchantService] is being subscribed for service[name : merchant-application]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,615 INFO
+            [main][AbstractSpringCloudRegistry.java:223] - The metadata of Dubbo service[key : ink.breakpoint.easypay.merchant.service.api.IMerchantService] can't be found when the subscribed service[name : merchant-application], and then try to initialize it
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,615 DEBUG
+            [main][DubboServiceMetadataRepository.java:273] - The metadata of Dubbo service[name : merchant-application] has been initialized
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,615 WARN
+            [main][AbstractSpringCloudRegistry.java:234] - The metadata of Dubbo service[key : ink.breakpoint.easypay.merchant.service.api.IMerchantService] still can't be found, it could effect the further Dubbo service invocation
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,616 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,617 INFO
+            [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service ink.breakpoint.easypay.merchant.service.api.IMerchantService url dubbo://172.16.42.117:20890/ink.breakpoint.easypay.merchant.service.api.IMerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService&bind.ip=172.16.42.117&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=ink.breakpoint.easypay.merchant.service.api.IMerchantService&methods=queryMerchantById&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1632970413723 to registry registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=13512&qos.enable=false&qos.port=22240&registry=nacos&release=2.7.3&timestamp=1632970413722, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,628 INFO
+            [main][AbstractRegistry.java:212] -  [DUBBO] Load registry cache file C:\Users\shaoshuai\.dubbo\dubbo-registry-merchant-service-127.0.0.1:8848.cache, data: {merchant-application/com.alibaba.cloud.dubbo.service.DubboMetadataService:1.0.0=dubbo://172.16.42.118:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=14700&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1632906964357&version=1.0.0}, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,628 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://172.16.42.117:20890/ink.breakpoint.easypay.merchant.service.api.IMerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=ink.breakpoint.easypay.merchant.service.api.IMerchantService&methods=queryMerchantById&pid=13512&register=true&release=2.7.3&side=provider&timestamp=1632970413723, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,639 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://172.16.42.117:20890/ink.breakpoint.easypay.merchant.service.api.IMerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService&bind.ip=172.16.42.117&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=ink.breakpoint.easypay.merchant.service.api.IMerchantService&methods=queryMerchantById&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1632970413723, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,661 WARN
+            [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://172.16.42.117:20890/ink.breakpoint.easypay.merchant.service.api.IMerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService&bind.ip=172.16.42.117&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=ink.breakpoint.easypay.merchant.service.api.IMerchantService&methods=queryMerchantById&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1632970413723, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,662 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://172.16.42.117:20890/ink.breakpoint.easypay.merchant.service.api.IMerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:ink.breakpoint.easypay.merchant.service.api.IMerchantService&bind.ip=172.16.42.117&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=ink.breakpoint.easypay.merchant.service.api.IMerchantService&methods=queryMerchantById&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1632970413723, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,672 INFO
+            [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-56040"]
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,697 INFO
+            [main][TomcatWebServer.java:204] - Tomcat started on port(s): 56040 (http) with context path ''
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,715 WARN
+            [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,723 INFO
+            [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to local registry url : injvm://127.0.0.1/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=172.16.42.117&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1632970414716&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,723 INFO
+            [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to url dubbo://172.16.42.117:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=172.16.42.117&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1632970414716&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,724 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,724 INFO
+            [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService url dubbo://172.16.42.117:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=172.16.42.117&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1632970414716&version=1.0.0 to registry registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=13512&qos.enable=false&qos.port=22240&registry=nacos&release=2.7.3&timestamp=1632970414716, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,725 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://172.16.42.117:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=13512&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1632970414716&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,729 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://172.16.42.117:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=172.16.42.117&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1632970414716&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,739 WARN
+            [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://172.16.42.117:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=172.16.42.117&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1632970414716&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,740 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://172.16.42.117:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=172.16.42.117&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=13512&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1632970414716&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.42.117
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,740 INFO
+            [main][DubboMetadataServiceExporter.java:86] - The Dubbo service[<dubbo:service path="com.alibaba.cloud.dubbo.service.DubboMetadataService" ref="com.alibaba.cloud.dubbo.service.IntrospectiveDubboMetadataService@6463da36" prefix="dubbo.service.com.alibaba.cloud.dubbo.service.DubboMetadataService" generic="false" unexported="false" exported="true" interface="com.alibaba.cloud.dubbo.service.DubboMetadataService" version="1.0.0" dynamic="true" group="merchant-service" register="true" deprecated="false" id="com.alibaba.cloud.dubbo.service.DubboMetadataService" valid="true" />] has been exported.
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,947 INFO
+            [main][NacosServiceRegistry.java:62] - nacos registry, merchant-service 172.16.42.117:56040 register finished
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:34,950 INFO
+            [main][StartupInfoLogger.java:59] - Started MerchantServiceBootstrap in 10.579 seconds (JVM running for 12.217)
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:35,513 INFO
+            [RMI TCP Connection(1)-172.16.42.117][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:35,513 INFO
+            [RMI TCP Connection(1)-172.16.42.117][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:53:35,544 INFO
+            [RMI TCP Connection(1)-172.16.42.117][FrameworkServlet.java:546] - Completed initialization in 31 ms
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:54:03,713 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:54:33,741 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:55:03,765 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:55:33,785 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[easypay][${env:SERVER_PORT}] 2021-09-30 10:56:03,812 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services

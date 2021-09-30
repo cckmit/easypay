@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="easypay-common" />
+        <module name="easypay-verification" />
+        <module name="easypay-merchant-api" />
+        <module name="easypay-verify-api" />
+        <module name="easypay-verify-service" />
+        <module name="generator" />
+        <module name="easypay-merchant-service" />
+        <module name="easypay-merchant-application" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="easypay-verfy-api" target="1.8" />
+      <module name="easypay-verfy-service" target="1.8" />
+      <module name="sasypay-verfy-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="easypay" options="" />
+      <module name="easypay-common" options="-parameters -bootclasspath D:/dev/Java/jdk1.8.0_301/jre/lib/rt.jar;D:/dev/Java/jdk1.8.0_301/jre/lib/jce.jar" />
+      <module name="easypay-merchant" options="" />
+      <module name="easypay-merchant-api" options="-parameters" />
+      <module name="easypay-merchant-application" options="-parameters" />
+      <module name="easypay-merchant-service" options="-parameters" />
+      <module name="easypay-verfy-api" options="-parameters" />
+      <module name="easypay-verfy-service" options="-parameters" />
+      <module name="easypay-verification" options="-parameters" />
+      <module name="easypay-verify-api" options="-parameters" />
+      <module name="easypay-verify-service" options="-parameters" />
+      <module name="generator" options="-parameters" />
+      <module name="sasypay-verfy-api" options="-parameters" />
+    </option>
+  </component>
+</project>

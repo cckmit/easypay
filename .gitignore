@@ -1,0 +1,7 @@
+# 项目排除路径
+/easypay-common/target/
+/easypay-merchant/easypay-merchant-api/target/
+/easypay-merchant/easypay-merchant-service/target/
+/easypay-merchant-application/target/
+/easypay-verification/target/
+/generator/target/
