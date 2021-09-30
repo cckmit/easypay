@@ -1,0 +1,3 @@
+sms:
+  url: http://localhost:xxxx/xxxx?phone=xxxxxxxxxxx
+  effectiveTime: 60

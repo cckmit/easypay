@@ -15,7 +15,7 @@ services:
 
   sailing:
     container_name: sailing
-    build: .
+    build: ""
     image: sailing:1.0-SNAPSHOT
     network_mode: "host"
     ports:

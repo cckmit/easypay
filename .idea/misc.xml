@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/easypay-verify/sasypay-verfy-service/pom.xml" />
         <option value="$PROJECT_DIR$/easypay-verify/easypay-verfy-service/pom.xml" />
         <option value="$PROJECT_DIR$/easypay-verify/easypay-verfy-api/pom.xml" />
+        <option value="$PROJECT_DIR$/easypay-verify/easypay-sms-server/pom.xml" />
       </list>
     </option>
   </component>

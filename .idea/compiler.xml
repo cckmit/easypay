@@ -8,12 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="easypay-common" />
-        <module name="easypay-verification" />
         <module name="easypay-merchant-api" />
         <module name="easypay-verify-api" />
         <module name="easypay-verify-service" />
         <module name="generator" />
         <module name="easypay-merchant-service" />
+        <module name="easypay-sms-server" />
         <module name="easypay-merchant-application" />
       </profile>
     </annotationProcessing>
@@ -31,9 +31,9 @@
       <module name="easypay-merchant-api" options="-parameters" />
       <module name="easypay-merchant-application" options="-parameters" />
       <module name="easypay-merchant-service" options="-parameters" />
+      <module name="easypay-sms-server" options="-parameters" />
       <module name="easypay-verfy-api" options="-parameters" />
       <module name="easypay-verfy-service" options="-parameters" />
-      <module name="easypay-verification" options="-parameters" />
       <module name="easypay-verify-api" options="-parameters" />
       <module name="easypay-verify-service" options="-parameters" />
       <module name="generator" options="-parameters" />
