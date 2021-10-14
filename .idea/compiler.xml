@@ -7,37 +7,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="easypay-transaction-api" />
+        <module name="easypay-uaa-api" />
         <module name="easypay-common" />
         <module name="easypay-merchant-api" />
-        <module name="easypay-verify-api" />
-        <module name="easypay-verify-service" />
-        <module name="generator" />
+        <module name="easypay-uaa-service" />
+        <module name="easypay-user-api" />
         <module name="easypay-merchant-service" />
-        <module name="easypay-sms-server" />
+        <module name="sailing" />
+        <module name="easypay-gateway-service" />
+        <module name="easypay-user-service" />
         <module name="easypay-merchant-application" />
+        <module name="easypay-transaction-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="easypay-verfy-api" target="1.8" />
-      <module name="easypay-verfy-service" target="1.8" />
-      <module name="sasypay-verfy-api" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="easypay" options="" />
-      <module name="easypay-common" options="-parameters -bootclasspath D:/dev/Java/jdk1.8.0_301/jre/lib/rt.jar;D:/dev/Java/jdk1.8.0_301/jre/lib/jce.jar" />
-      <module name="easypay-merchant" options="" />
+      <module name="easypay-common" options="-parameters -bootclasspath $PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/rt.jar;$PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/jce.jar" />
+      <module name="easypay-gateway-service" options="-parameters" />
       <module name="easypay-merchant-api" options="-parameters" />
       <module name="easypay-merchant-application" options="-parameters" />
       <module name="easypay-merchant-service" options="-parameters" />
-      <module name="easypay-sms-server" options="-parameters" />
-      <module name="easypay-verfy-api" options="-parameters" />
-      <module name="easypay-verfy-service" options="-parameters" />
-      <module name="easypay-verify-api" options="-parameters" />
-      <module name="easypay-verify-service" options="-parameters" />
-      <module name="generator" options="-parameters" />
-      <module name="sasypay-verfy-api" options="-parameters" />
+      <module name="easypay-transaction" options="-parameters" />
+      <module name="easypay-transaction-api" options="-parameters -bootclasspath $PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/rt.jar;$PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/jce.jar" />
+      <module name="easypay-transaction-service" options="-parameters" />
+      <module name="easypay-uaa-api" options="-parameters -bootclasspath $PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/rt.jar;$PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/jce.jar" />
+      <module name="easypay-uaa-service" options="-parameters" />
+      <module name="easypay-user-api" options="-parameters -bootclasspath $PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/rt.jar;$PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/jce.jar" />
+      <module name="easypay-user-service" options="-parameters" />
+      <module name="sailing" options="-parameters" />
     </option>
   </component>
 </project>

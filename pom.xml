@@ -9,10 +9,10 @@
         <module>easypay-common</module>
         <module>easypay-merchant</module>
         <module>easypay-merchant-application</module>
-        <module>generator</module>
-        <module>easypay-verification</module>
-        <module>easypay-verify</module>
-        <module>sasypay-verfy/sasypay-verfy-service</module>
+        <module>easypay-transaction</module>
+        <module>easypay-uaa</module>
+        <module>easypay-user</module>
+        <module>easypay-gateway</module>
     </modules>
 
     <parent>

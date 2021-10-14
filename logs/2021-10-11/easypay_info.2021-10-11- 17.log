@@ -1,0 +1,7 @@
+[easypay][${env:SERVER_PORT}] 2021-10-11 18:00:05,336 DEBUG [PollingServerListUpdater-1][DynamicServerListLoadBalancer.java:241] - List of Servers for uaa-service obtained from Discovery client: [172.16.42.120:56020]
+[easypay][${env:SERVER_PORT}] 2021-10-11 18:00:05,337 DEBUG [PollingServerListUpdater-1][DynamicServerListLoadBalancer.java:246] - Filtered List of Servers for uaa-service obtained from Discovery client: [172.16.42.120:56020]
+[easypay][${env:SERVER_PORT}] 2021-10-11 18:00:05,337 DEBUG [PollingServerListUpdater-1][BaseLoadBalancer.java:491] - LoadBalancer [uaa-service]: clearing server list (SET op)
+[easypay][${env:SERVER_PORT}] 2021-10-11 18:00:05,338 DEBUG [PollingServerListUpdater-1][BaseLoadBalancer.java:507] - LoadBalancer [uaa-service]:  addServer [172.16.42.120:56020]
+[easypay][${env:SERVER_PORT}] 2021-10-11 18:00:05,338 DEBUG [PollingServerListUpdater-1][DynamicServerListLoadBalancer.java:179] - Setting server list for zones: {unknown=[172.16.42.120:56020]}
+[easypay][${env:SERVER_PORT}] 2021-10-11 18:00:05,338 DEBUG [PollingServerListUpdater-1][BaseLoadBalancer.java:491] - LoadBalancer [uaa-service_unknown]: clearing server list (SET op)
+[easypay][${env:SERVER_PORT}] 2021-10-11 18:00:05,339 DEBUG [PollingServerListUpdater-1][BaseLoadBalancer.java:507] - LoadBalancer [uaa-service_unknown]:  addServer [172.16.42.120:56020]

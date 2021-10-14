@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.breakpoint.easypay.transaction.mapper.PlatformChannelMapper">
+<!--    <select id="selectPayChannelByPlatformChannel">-->
+<!--        select pay_channel.*-->
+<!--        from pay_channel,-->
+<!--             platform_pay_channel-->
+<!--        where platform_pay_channel.PAY_CHANNEL = pay_channel.CHANNEL_CODE-->
+<!--          and platform_pay_channel.PLATFORM_CHANNEL = #{platformChannelCode}-->
+<!--    </select>-->
+</mapper>
