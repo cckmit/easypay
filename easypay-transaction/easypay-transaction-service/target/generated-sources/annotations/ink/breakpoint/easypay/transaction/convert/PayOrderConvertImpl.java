@@ -3,11 +3,12 @@ package ink.breakpoint.easypay.transaction.convert;
 import ink.breakpoint.easypay.transaction.api.dto.OrderResultDTO;
 import ink.breakpoint.easypay.transaction.api.dto.PayOrderDTO;
 import ink.breakpoint.easypay.transaction.entity.PayOrder;
+import ink.breakpoint.easypay.transaction.vo.OrderConfirmVo;
 import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-10-19T19:25:29+0800",
+    date = "2021-10-23T17:14:54+0800",
     comments = "version: 1.3.0.Final, compiler: javac, environment: Java 1.8.0_301 (Oracle Corporation)"
 )
 public class PayOrderConvertImpl implements PayOrderConvert {
@@ -83,61 +84,51 @@ public class PayOrderConvertImpl implements PayOrderConvert {
     }
 
     @Override
-    public OrderResultDTO entity2dto(PayOrder entity) {
+    public PayOrderDTO entity2dto(PayOrder entity) {
         if ( entity == null ) {
             return null;
         }
 
-        OrderResultDTO orderResultDTO = new OrderResultDTO();
+        PayOrderDTO payOrderDTO = new PayOrderDTO();
 
-        orderResultDTO.setId( entity.getId() );
-        orderResultDTO.setTradeNo( entity.getTradeNo() );
-        orderResultDTO.setMerchantId( entity.getMerchantId() );
-        orderResultDTO.setStoreId( entity.getStoreId() );
-        orderResultDTO.setAppId( entity.getAppId() );
-        orderResultDTO.setPayChannel( entity.getPayChannel() );
-        orderResultDTO.setPayChannelMchId( entity.getPayChannelMchId() );
-        orderResultDTO.setPayChannelTradeNo( entity.getPayChannelTradeNo() );
-        orderResultDTO.setChannel( entity.getChannel() );
-        orderResultDTO.setOutTradeNo( entity.getOutTradeNo() );
-        orderResultDTO.setSubject( entity.getSubject() );
-        orderResultDTO.setBody( entity.getBody() );
-        orderResultDTO.setCurrency( entity.getCurrency() );
-        orderResultDTO.setTotalAmount( entity.getTotalAmount() );
-        orderResultDTO.setOptional( entity.getOptional() );
-        orderResultDTO.setAnalysis( entity.getAnalysis() );
-        orderResultDTO.setExtra( entity.getExtra() );
-        orderResultDTO.setTradeState( entity.getTradeState() );
-        orderResultDTO.setErrorCode( entity.getErrorCode() );
-        orderResultDTO.setErrorMsg( entity.getErrorMsg() );
-        orderResultDTO.setDevice( entity.getDevice() );
-        orderResultDTO.setClientIp( entity.getClientIp() );
-        orderResultDTO.setCreateTime( entity.getCreateTime() );
-        orderResultDTO.setUpdateTime( entity.getUpdateTime() );
-        orderResultDTO.setExpireTime( entity.getExpireTime() );
-        orderResultDTO.setPaySuccessTime( entity.getPaySuccessTime() );
-        orderResultDTO.setPayChannelMchAppId( entity.getPayChannelMchAppId() );
+        payOrderDTO.setMerchantId( entity.getMerchantId() );
+        payOrderDTO.setStoreId( entity.getStoreId() );
+        payOrderDTO.setAppId( entity.getAppId() );
+        payOrderDTO.setChannel( entity.getChannel() );
+        payOrderDTO.setTradeNo( entity.getTradeNo() );
+        payOrderDTO.setOutTradeNo( entity.getOutTradeNo() );
+        payOrderDTO.setSubject( entity.getSubject() );
+        payOrderDTO.setBody( entity.getBody() );
+        payOrderDTO.setCurrency( entity.getCurrency() );
+        payOrderDTO.setTotalAmount( entity.getTotalAmount() );
+        payOrderDTO.setOptional( entity.getOptional() );
+        payOrderDTO.setAnalysis( entity.getAnalysis() );
+        payOrderDTO.setExtra( entity.getExtra() );
+        payOrderDTO.setDevice( entity.getDevice() );
+        payOrderDTO.setClientIp( entity.getClientIp() );
+        payOrderDTO.setPayChannel( entity.getPayChannel() );
+        payOrderDTO.setTradeState( entity.getTradeState() );
+        payOrderDTO.setCreateTime( entity.getCreateTime() );
+        payOrderDTO.setUpdateTime( entity.getUpdateTime() );
+        payOrderDTO.setExpireTime( entity.getExpireTime() );
+        payOrderDTO.setPaySuccessTime( entity.getPaySuccessTime() );
 
-        return orderResultDTO;
+        return payOrderDTO;
     }
 
     @Override
-    public PayOrder dto2entity(OrderResultDTO dto) {
+    public PayOrder dto2entity(PayOrderDTO dto) {
         if ( dto == null ) {
             return null;
         }
 
         PayOrder payOrder = new PayOrder();
 
-        payOrder.setId( dto.getId() );
         payOrder.setTradeNo( dto.getTradeNo() );
         payOrder.setMerchantId( dto.getMerchantId() );
         payOrder.setStoreId( dto.getStoreId() );
         payOrder.setAppId( dto.getAppId() );
         payOrder.setPayChannel( dto.getPayChannel() );
-        payOrder.setPayChannelMchId( dto.getPayChannelMchId() );
-        payOrder.setPayChannelMchAppId( dto.getPayChannelMchAppId() );
-        payOrder.setPayChannelTradeNo( dto.getPayChannelTradeNo() );
         payOrder.setChannel( dto.getChannel() );
         payOrder.setOutTradeNo( dto.getOutTradeNo() );
         payOrder.setSubject( dto.getSubject() );
@@ -148,8 +139,6 @@ public class PayOrderConvertImpl implements PayOrderConvert {
         payOrder.setAnalysis( dto.getAnalysis() );
         payOrder.setExtra( dto.getExtra() );
         payOrder.setTradeState( dto.getTradeState() );
-        payOrder.setErrorCode( dto.getErrorCode() );
-        payOrder.setErrorMsg( dto.getErrorMsg() );
         payOrder.setDevice( dto.getDevice() );
         payOrder.setClientIp( dto.getClientIp() );
         payOrder.setCreateTime( dto.getCreateTime() );
@@ -158,5 +147,29 @@ public class PayOrderConvertImpl implements PayOrderConvert {
         payOrder.setPaySuccessTime( dto.getPaySuccessTime() );
 
         return payOrder;
+    }
+
+    @Override
+    public PayOrderDTO vo2dto(OrderConfirmVo orderConfirmVo) {
+        if ( orderConfirmVo == null ) {
+            return null;
+        }
+
+        PayOrderDTO payOrderDTO = new PayOrderDTO();
+
+        if ( orderConfirmVo.getStoreId() != null ) {
+            payOrderDTO.setStoreId( Long.parseLong( orderConfirmVo.getStoreId() ) );
+        }
+        payOrderDTO.setAppId( orderConfirmVo.getAppId() );
+        payOrderDTO.setChannel( orderConfirmVo.getChannel() );
+        payOrderDTO.setTradeNo( orderConfirmVo.getTradeNo() );
+        payOrderDTO.setSubject( orderConfirmVo.getSubject() );
+        payOrderDTO.setBody( orderConfirmVo.getBody() );
+        if ( orderConfirmVo.getTotalAmount() != null ) {
+            payOrderDTO.setTotalAmount( Integer.parseInt( orderConfirmVo.getTotalAmount() ) );
+        }
+        payOrderDTO.setOpenId( orderConfirmVo.getOpenId() );
+
+        return payOrderDTO;
     }
 }

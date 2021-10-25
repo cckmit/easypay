@@ -13,6 +13,7 @@
         <module>easypay-uaa</module>
         <module>easypay-user</module>
         <module>easypay-gateway</module>
+        <module>easypay-payment-agent</module>
     </modules>
 
     <parent>

@@ -443,7 +443,7 @@ export default class extends Vue {
     this.paramId = this.$route.params.id
     this.paramStep = this.$route.params.step
     this.step = Number(this.paramStep)
-    if (this.paramId == '0') {
+    if ('0' == this.paramId) {
     } else {
       this.getAppLists()
       this.appIds = this.paramId
@@ -484,11 +484,11 @@ export default class extends Vue {
     this.serveList.forEach((item: any) => {
       if (item.channelCode === 'huimin_b2c') {
         item.state = this.isB2c
-      } else if (item.channelCode === 'huimin_c2b'){
+      } else if (item.channelCode === 'huimin_c2b') {
         item.state = this.isC2b
-      }else if (item.channelCode === 'wx_native'){
+      } else if (item.channelCode === 'wx_native') {
         item.state = this.isWeixin
-      }else if (item.channelCode === 'alipay_wap'){
+      } else if (item.channelCode === 'alipay_wap') {
         item.state = this.isAlipay
       }
     })
@@ -610,7 +610,7 @@ export default class extends Vue {
 
     setTimeout(() => {
       if (value.channelCode == 'WX_JSAPI' || value.channelCode == 'WX_MICROPAY') {
-        if (Object.keys(this.realParams).length != 0) {
+        if (0 != Object.keys(this.realParams).length) {
           if (value.channelCode == this.realParams.payChannel) {
             this.setNames = this.realParams.channelName
             this.wxform.appID = JSON.parse(this.realParams.param).appID
@@ -708,11 +708,11 @@ export default class extends Vue {
       this.serveList.forEach((item: any) => {
         if (item.channelCode === 'huimin_b2c') {
           item.state = this.isB2c
-        } else if (item.channelCode === 'huimin_c2b'){
+        } else if (item.channelCode === 'huimin_c2b') {
           item.state = this.isC2b
-        }else if (item.channelCode === 'wx_native'){
+        } else if (item.channelCode === 'wx_native') {
           item.state = this.isWeixin
-        }else if (item.channelCode === 'alipay_wap'){
+        } else if (item.channelCode === 'alipay_wap') {
           item.state = this.isAlipay
         }
       })
@@ -786,11 +786,11 @@ export default class extends Vue {
       this.serveList.forEach((item: any) => {
         if (item.channelCode === 'huimin_b2c') {
           item.state = this.isB2c
-        } else if (item.channelCode === 'huimin_c2b'){
+        } else if (item.channelCode === 'huimin_c2b') {
           item.state = this.isC2b
-        }else if (item.channelCode === 'wx_native'){
+        } else if (item.channelCode === 'wx_native') {
           item.state = this.isWeixin
-        }else if (item.channelCode === 'alipay_wap'){
+        } else if (item.channelCode === 'alipay_wap') {
           item.state = this.isAlipay
         }
       })

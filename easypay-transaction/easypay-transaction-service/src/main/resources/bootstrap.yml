@@ -41,6 +41,9 @@ spring:
           - refresh: true
             data-id: spring-boot-freemarker.yaml
             group: COMMON_GROUP
+          - refresh: true
+            data‐id: spring-boot-start-rocketmq.yaml # rocketmq配置
+            group: COMMON_GROUP # 通用配置组
 
 dubbo:
   scan:

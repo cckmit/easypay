@@ -21,12 +21,15 @@ public class StoreDTO implements Serializable {
     private String storeName;
 
     @ApiModelProperty(value = "门店编号")
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long storeNumber;
 
     @ApiModelProperty(value = "所属商户")
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long merchantId;
 
     @ApiModelProperty(value = "父门店")
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long parentId;
 
     @ApiModelProperty(value = "0表示禁用，1表示启用")

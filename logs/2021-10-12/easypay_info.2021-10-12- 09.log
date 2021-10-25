@@ -1,4 +1,0 @@
-[easypay][${env:SERVER_PORT}] 2021-10-12 10:00:00,863 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:241] - List of Servers for uaa-service obtained from Discovery client: []
-[easypay][${env:SERVER_PORT}] 2021-10-12 10:00:00,863 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:246] - Filtered List of Servers for uaa-service obtained from Discovery client: []
-[easypay][${env:SERVER_PORT}] 2021-10-12 10:00:00,863 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:491] - LoadBalancer [uaa-service]: clearing server list (SET op)
-[easypay][${env:SERVER_PORT}] 2021-10-12 10:00:00,863 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:179] - Setting server list for zones: {}

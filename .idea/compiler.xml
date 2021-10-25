@@ -2,41 +2,62 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="easypay-transaction-api" />
-        <module name="easypay-uaa-api" />
-        <module name="easypay-common" />
         <module name="easypay-merchant-api" />
         <module name="easypay-uaa-service" />
-        <module name="easypay-user-api" />
-        <module name="easypay-merchant-service" />
-        <module name="sailing" />
+        <module name="easypay-payment-agent-api" />
         <module name="easypay-gateway-service" />
+        <module name="easypay-uaa-api" />
+        <module name="easypay-user-api" />
+        <module name="easypay-payment-agent-service" />
+        <module name="easypay-merchant-service" />
         <module name="easypay-user-service" />
-        <module name="easypay-merchant-application" />
         <module name="easypay-transaction-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="easypay" target="1.8" />
+      <module name="easypay-common" target="1.8" />
+      <module name="easypay-gateway" target="1.8" />
+      <module name="easypay-gateway-service" target="1.8" />
+      <module name="easypay-merchant" target="1.8" />
+      <module name="easypay-merchant-api" target="1.8" />
+      <module name="easypay-merchant-application" target="1.8" />
+      <module name="easypay-merchant-service" target="1.8" />
+      <module name="easypay-payment-agent" target="1.8" />
+      <module name="easypay-payment-agent-api" target="1.8" />
+      <module name="easypay-payment-agent-service" target="1.8" />
+      <module name="easypay-transaction" target="1.8" />
+      <module name="easypay-transaction-api" target="1.8" />
+      <module name="easypay-transaction-service" target="1.8" />
+      <module name="easypay-uaa" target="1.8" />
+      <module name="easypay-uaa-api" target="1.8" />
+      <module name="easypay-uaa-service" target="1.8" />
+      <module name="easypay-user" target="1.8" />
+      <module name="easypay-user-api" target="1.8" />
+      <module name="easypay-user-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="easypay-common" options="-parameters -bootclasspath $PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/rt.jar;$PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/jce.jar" />
+      <module name="easypay-common" options="-parameters -bootclasspath &quot;D:\DEV\JetBrains\IntelliJ IDEA 2021.2.1\jbr/lib/rt.jar;D:\DEV\JetBrains\IntelliJ IDEA 2021.2.1\jbr/lib/jce.jar&quot;" />
       <module name="easypay-gateway-service" options="-parameters" />
       <module name="easypay-merchant-api" options="-parameters" />
       <module name="easypay-merchant-application" options="-parameters" />
       <module name="easypay-merchant-service" options="-parameters" />
-      <module name="easypay-transaction" options="-parameters" />
-      <module name="easypay-transaction-api" options="-parameters -bootclasspath $PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/rt.jar;$PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/jce.jar" />
+      <module name="easypay-payment-agent-api" options="-parameters -bootclasspath &quot;D:\DEV\JetBrains\IntelliJ IDEA 2021.2.1\jbr/lib/rt.jar;D:\DEV\JetBrains\IntelliJ IDEA 2021.2.1\jbr/lib/jce.jar&quot;" />
+      <module name="easypay-payment-agent-service" options="-parameters" />
+      <module name="easypay-transaction-api" options="-parameters -bootclasspath &quot;D:\DEV\JetBrains\IntelliJ IDEA 2021.2.1\jbr/lib/rt.jar;D:\DEV\JetBrains\IntelliJ IDEA 2021.2.1\jbr/lib/jce.jar&quot;" />
       <module name="easypay-transaction-service" options="-parameters" />
-      <module name="easypay-uaa-api" options="-parameters -bootclasspath $PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/rt.jar;$PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/jce.jar" />
+      <module name="easypay-uaa" options="-parameters" />
+      <module name="easypay-uaa-api" options="-parameters -bootclasspath &quot;D:\DEV\JetBrains\IntelliJ IDEA 2021.2.1\jbr/lib/rt.jar;D:\DEV\JetBrains\IntelliJ IDEA 2021.2.1\jbr/lib/jce.jar&quot;" />
       <module name="easypay-uaa-service" options="-parameters" />
-      <module name="easypay-user-api" options="-parameters -bootclasspath $PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/rt.jar;$PROJECT_DIR$/../../DEV/java/jdk1.8.0_301/jre/lib/jce.jar" />
+      <module name="easypay-user-api" options="-parameters -bootclasspath &quot;D:\DEV\JetBrains\IntelliJ IDEA 2021.2.1\jbr/lib/rt.jar;D:\DEV\JetBrains\IntelliJ IDEA 2021.2.1\jbr/lib/jce.jar&quot;" />
       <module name="easypay-user-service" options="-parameters" />
-      <module name="sailing" options="-parameters" />
     </option>
   </component>
 </project>

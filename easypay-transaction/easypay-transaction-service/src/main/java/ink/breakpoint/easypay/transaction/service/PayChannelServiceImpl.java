@@ -212,7 +212,6 @@ public class PayChannelServiceImpl implements PayChannelService {
             //将json串转成 List<PayChannelParamDTO>返回
             return JSON.parseArray(PayChannelParamDTO_String, PayChannelParamDTO.class);
         }
-
         //缓存中没有 则从数据库查询  根据应用和服务类型找到它们绑定id
         Long appPlatformChannelId = selectIdByAppPlatformChannel(appId, platformChannel);
         if(appPlatformChannelId == null){

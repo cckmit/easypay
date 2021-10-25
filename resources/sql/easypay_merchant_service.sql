@@ -1,0 +1,176 @@
+-- MySQL dump 10.13  Distrib 5.7.34, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: easypay_merchant_service
+-- ------------------------------------------------------
+-- Server version	5.7.34
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `app`
+--
+
+DROP TABLE IF EXISTS `app`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `app` (
+  `ID` bigint(20) NOT NULL,
+  `APP_ID` varchar(50) DEFAULT NULL,
+  `APP_NAME` varchar(50) DEFAULT NULL COMMENT '商店名称',
+  `MERCHANT_ID` bigint(20) DEFAULT NULL COMMENT '所属商户',
+  `PUBLIC_KEY` text COMMENT '应用公钥(RSAWithSHA256)',
+  `NOTIFY_URL` varchar(50) DEFAULT NULL COMMENT '授权回调地址',
+  PRIMARY KEY (`ID`) USING BTREE,
+  UNIQUE KEY `APP_ID` (`APP_ID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `app`
+--
+
+LOCK TABLES `app` WRITE;
+/*!40000 ALTER TABLE `app` DISABLE KEYS */;
+INSERT INTO `app` VALUES (1448499869196398593,'fa8a5408758f48189d0813e6b8caff68','string',1447735684984365057,'string','string'),(1448499931171434497,'13b815d029ab4f2e8b614269dbc5d720','麻辣香锅',1447735684984365057,'string','string'),(1450007437750784002,'87a2702d0df64669aa73924dd13bd969','我的小店',1449955397829902338,'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAluPZPKd1kgBhIwM8Jnna66/HNT+ijOvSaJsRR88tpc844uIKeRriBFfL2GA3cBtuKH3dVHY5l7XzZEO9MPMMsC7yAvw2e1ZQVOjDvN4wJ3H2xgRHjwbmHtf11li3aYlafQ27AM+Y3TpW4jwtXa48Tf6gs4H7hZVMxGb2MMK6ctTaulTMVaYbsc10qQ8wojSCfrjSWrE8SN09w/WGkP3iTpk75lRIIs4uk4/witNFthT1CZAuCYs8XQEkhDO0Jeh4WEhxJzX8V/XS4h7biC0BLY0knZiBVex0mv9gKcN5NzQKCR2h4WUg9s1oSrv4BKZpODJejACENv8Jkvc/bM2Z5QIDAQAB','');
+/*!40000 ALTER TABLE `app` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `merchant`
+--
+
+DROP TABLE IF EXISTS `merchant`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `merchant` (
+  `ID` bigint(20) NOT NULL COMMENT '主键',
+  `MERCHANT_NAME` varchar(50) DEFAULT NULL COMMENT '商户名称',
+  `MERCHANT_NO` varchar(32) DEFAULT NULL COMMENT '企业编号',
+  `MERCHANT_ADDRESS` varchar(255) DEFAULT NULL COMMENT '企业地址',
+  `MERCHANT_TYPE` varchar(50) DEFAULT NULL COMMENT '商户类型',
+  `BUSINESS_LICENSES_IMG` varchar(100) DEFAULT NULL COMMENT '营业执照（企业证明）',
+  `ID_CARD_FRONT_IMG` varchar(100) DEFAULT NULL COMMENT '法人身份证正面照片',
+  `ID_CARD_AFTER_IMG` varchar(100) DEFAULT NULL COMMENT '法人身份证反面照片',
+  `USERNAME` varchar(50) DEFAULT NULL COMMENT '联系人姓名',
+  `MOBILE` varchar(50) DEFAULT NULL COMMENT '联系人手机号(关联统一账号)',
+  `CONTACTS_ADDRESS` varchar(255) DEFAULT NULL COMMENT '联系人地址',
+  `AUDIT_STATUS` varchar(20) DEFAULT NULL COMMENT '审核状态 0-未申请,1-已申请待审核,2-审核通过,3-审核拒绝',
+  `TENANT_ID` bigint(20) DEFAULT NULL COMMENT '租户ID,关联统一用户',
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `merchant`
+--
+
+LOCK TABLES `merchant` WRITE;
+/*!40000 ALTER TABLE `merchant` DISABLE KEYS */;
+INSERT INTO `merchant` VALUES (1,'杨国富','11','顺丰到付','暗室逢灯',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(1448853670087049218,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'admin','13298100103',NULL,'0',22),(1449955397829902338,'企业名称','bianhao','地址','教育','','','','test','13333333333','啊是发发发撒法发撒身份前往染色法','2',12);
+/*!40000 ALTER TABLE `merchant` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `staff`
+--
+
+DROP TABLE IF EXISTS `staff`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `staff` (
+  `ID` bigint(20) NOT NULL COMMENT '主键',
+  `MERCHANT_ID` bigint(20) DEFAULT NULL COMMENT '商户ID',
+  `FULL_NAME` varchar(50) DEFAULT NULL COMMENT '姓名',
+  `POSITION` varchar(50) DEFAULT NULL COMMENT '职位',
+  `USERNAME` varchar(50) DEFAULT NULL COMMENT '用户名(关联统一用户)',
+  `MOBILE` varchar(50) DEFAULT NULL COMMENT '手机号(关联统一用户)',
+  `STORE_ID` bigint(20) DEFAULT NULL COMMENT '员工所属门店',
+  `LAST_LOGIN_TIME` datetime DEFAULT NULL COMMENT '最后一次登录时间',
+  `STAFF_STATUS` bit(1) DEFAULT NULL COMMENT '0表示禁用，1表示启用',
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `staff`
+--
+
+LOCK TABLES `staff` WRITE;
+/*!40000 ALTER TABLE `staff` DISABLE KEYS */;
+INSERT INTO `staff` VALUES (1448853670149963778,1448853670087049218,NULL,NULL,'admin','13298100103',1448853670087049219,NULL,NULL),(1449955397934759938,1449955397829902338,NULL,NULL,'test','13333333333',1449955397829902339,NULL,NULL);
+/*!40000 ALTER TABLE `staff` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `store`
+--
+
+DROP TABLE IF EXISTS `store`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `store` (
+  `ID` bigint(20) NOT NULL,
+  `STORE_NAME` varchar(50) DEFAULT NULL COMMENT '门店名称',
+  `STORE_NUMBER` bigint(20) DEFAULT NULL COMMENT '门店编号',
+  `MERCHANT_ID` bigint(20) DEFAULT NULL COMMENT '所属商户',
+  `PARENT_ID` bigint(20) DEFAULT NULL COMMENT '父门店',
+  `STORE_STATUS` bit(1) DEFAULT NULL COMMENT '0表示禁用，1表示启用',
+  `STORE_ADDRESS` varchar(50) DEFAULT NULL COMMENT '门店地址',
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `store`
+--
+
+LOCK TABLES `store` WRITE;
+/*!40000 ALTER TABLE `store` DISABLE KEYS */;
+INSERT INTO `store` VALUES (1448853670087049219,'根门店',NULL,1448853670087049218,NULL,NULL,NULL),(1449955397829902339,'根门店',NULL,1449955397829902338,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `store` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `store_staff`
+--
+
+DROP TABLE IF EXISTS `store_staff`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `store_staff` (
+  `ID` bigint(20) NOT NULL,
+  `STORE_ID` bigint(20) DEFAULT NULL COMMENT '门店标识',
+  `STAFF_ID` bigint(20) DEFAULT NULL COMMENT '员工标识',
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `store_staff`
+--
+
+LOCK TABLES `store_staff` WRITE;
+/*!40000 ALTER TABLE `store_staff` DISABLE KEYS */;
+INSERT INTO `store_staff` VALUES (1448853670149963779,1448853670087049219,1448853670149963778),(1449955397934759939,1449955397829902339,1449955397934759938);
+/*!40000 ALTER TABLE `store_staff` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-10-25 14:50:26

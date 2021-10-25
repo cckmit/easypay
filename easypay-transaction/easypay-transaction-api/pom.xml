@@ -18,6 +18,12 @@
             <artifactId>easypay-common</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>ink.breakpoint.easypay</groupId>
+            <artifactId>easypay-payment-agent-api</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
